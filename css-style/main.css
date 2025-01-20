@@ -14,29 +14,19 @@
 --neutral-color-grayish-blue:hsl(229, 6%, 66%);
 --neutral-color-very-light-gray:hsl(0, 0%, 98%);
 }
-
+html{
+    font-size: 62.5%;
+}
 body{
     text-align: center;
-    font-size: 93.75%; 
- 
-    background-color: rgb(217, 238, 255);
+    background-color: var(--neutral-color-very-light-gray);
     font-family: "Poppins", serif;
     font-weight: 400;
     font-style: normal;
-}
-footer{
-    height: 10vh;
+    font-size: 1.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: aliceblue;
 }
-footer p{
-    color:var(--neutral-color-very-dark-blue) !important;
 
-}
-a{
-    color: var(--neutral-color-grayish-blue);
-
-}
 

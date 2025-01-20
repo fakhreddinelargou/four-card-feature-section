@@ -1,139 +1,103 @@
-.container{
-    background-color:var(--neutral-color-very-light-gray);
-    width: 100%;
-    height: auto;
-    padding: 5rem 0 5rem 0;
-}
-.head{
-    height: 50vh;
-text-align: center;
-
-}
-h1,h2,h3{
-    color: var(--neutral-color-very-dark-blue);
-}
-.title-1{
-    display: block;
-    font-size: 3rem;
-    font-weight: 200;
-
-}
-.title-2{
-    padding-bottom: 2rem;
-    font-weight:600;
-    font-size: 3rem;
-
-}
-.paragraph{
-    font-size: 0.9rem;
-    width: 40%;
-    margin: auto;
-    
-}
-p{
+p {
     color: var(--neutral-color-grayish-blue);
 }
 
-.cards{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 2rem;
-flex-direction: row;
+.head {
+    margin-top: 5rem;
+    max-width: 90%;
 }
-.box{
-    position: relative;
-    text-align: start;
-    padding: 1.5rem;
-    height: 40vh;
-    background-color: white;
-    border-radius: 0.5rem;
-    box-shadow: 0px 10px 10px 3px rgba(202, 200, 200, 0.215);
-}
-.box h3{
-    padding-bottom: 0.5rem;
-}
-.box p{
-font-size: 0.8rem;
-}
-.art1,.art3{
-    width: 25%;
 
+.head h2 {
+    font-size: 3.5rem;
+    color: var(--neutral-color-very-dark-blue);
 }
-.art2{
-    width: 25%;
+
+.head-title-1 {
+    font-weight: 200;
+}
+
+.head-title-2 {
+    padding-bottom: 1.5rem;
+}
+
+.main {
+    max-width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    align-items: center;
+    gap: 5.5rem;
+    margin-bottom: 5rem;
 }
-.content-art2{
-    width: 100%;
-   
- 
+
+.paragraph {
+    max-width: 50rem;
 }
-.border-red{
-    border-top: solid 5px var(--primary-color-red) ;
+
+.four-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
 }
-.border-cyan{
-    border-top: solid 5px var(--primary-color-cyan) ;
+
+.cards {
+    border-radius: .5rem;
+    text-align: start;
+    padding: 2rem;
+    position: relative;
+    background-color: var(--neutral-color-very-light-gray);
+    box-shadow: 0 1rem .9rem .5rem hsla(229, 6%, 66%, 0.164);
 }
-.border-orange{
-    border-top: solid 5px var(--primary-color-orange) ;
+
+.cards h3 {
+    color: var(--neutral-color-very-dark-blue);
+    padding-bottom: 1.5rem;
 }
-.border-blue{
-    border-top: solid 5px var(--primary-color-blue) ;
+
+.cards p {
+    padding-bottom: 10rem;
+    max-width: 29rem;
 }
-svg{
+
+.cards svg {
     position: absolute;
-    right: 10%;
-    bottom: 10%;
+    right: 2.5rem;
+    bottom: 2.5rem;
 }
 
-@media screen and (max-width:450px) {
-  
-  
-    .cards{
-        flex-direction: column;
-justify-content: center;
-   gap: 1rem;
-        }
+.four-card .two-card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
 
-        .box{
-            width: 90vw;
-            height: 40vh;
-        }
-        .art2{
-       
-            align-items: center;
-            width: 100%;
-            padding: 5rem 0.3rem 5rem 0.3rem;
-        }
-        .box h3{
-          font-size: 2rem;
-        }
-        .box p{
-        font-size: 1rem;
-        }
-        .title-1{
-        
-            font-size: 2rem;
-          
-        
-        }
-        .title-2{
-        
-        
-        font-size: 2rem;
-        }
-        .paragraph{
-            font-size: 0.9rem;
-            width: 80%;
-            margin: auto;
-            
-        }
-        .container{
-            width: 100%;
-            height: auto;
-            padding: 5rem 0.3rem 5rem 0.3rem;
-        }
+.card-1 {
+    border-top: .5rem solid var(--primary-color-cyan);
+}
+
+.card-2 {
+    border-top: .5rem solid var(--primary-color-red);
+}
+
+.card-3 {
+    border-top: .5rem solid var(--primary-color-orange);
+}
+
+.card-4 {
+    border-top: .5rem solid var(--primary-color-blue);
+}
+
+@media screen and (max-width:50rem) {
+
+    .four-card {
+        flex-direction: column;
+    }
+
+    .head h2 {
+        font-size: 2.5rem;
+    }
+
+    .main .paragraph {
+        max-width: 30rem;
+    }
 }
